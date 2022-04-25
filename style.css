@@ -8,6 +8,7 @@
 }
 
 #main {
+     position: relative;
      width: 100vw;
      max-width: 100%;
      height: 100vh;
@@ -15,9 +16,6 @@
      align-items: center;
      justify-content: center;
      background-color: #e6e6ea;
-     display: flex;
-     align-items: center;
-     justify-content: center;
 }
 
 #quote-box {
@@ -28,6 +26,8 @@
      border-radius: 1rem;
      display: flex;
      flex-direction: column;
+     align-items: center;
+     justify-content: center;
 }
 
 
@@ -40,7 +40,7 @@
      display: grid;
      grid-template-rows: 1fr 3rem;
 }
-
+ 
 #text {
      align-self: center;
      justify-self: center;
@@ -111,9 +111,7 @@ input#new-quote:hover{
 
 @media only screen and (max-width: 480px) {
      #quote-box {
-          width: 100%;
-          height: 100%;
-          padding: 0;
+          height: 70%;
      }
 
      #quote-box--content {
@@ -122,10 +120,10 @@ input#new-quote:hover{
      }
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 480px) {
      #quote-box {
-          width: 100%;
-          height: 100%;
+          width: 95%;
+          height: 95%;
           padding: 0;
      }
 
@@ -134,4 +132,3 @@ input#new-quote:hover{
           left: 50%;
      }
 }
-
